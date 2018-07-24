@@ -39,4 +39,4 @@ read -p "Which Demo do you want to install?: " demoName
 echo "Deploying Demo: $demoName"
 
 # Copy the configurations to MINIFI_HOME
-cp $DEMO_HOME/Demos/$demoName/* $MINIF_HOME/conf/.
+cp $PWD/Demos/$demoName/* $MINIF_HOME/conf/.
