@@ -1,1 +1,3 @@
-# minifi-cpp-demos
+# MiNiFi C++ Demos
+
+## Demos
