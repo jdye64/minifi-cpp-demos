@@ -36,9 +36,10 @@ done
 
 # Listen for the demo that you want to install
 read -p "Which Demo do you want to install?: " demoName
-echo "Deploying Demo: $demoName"
+echo "Deploying Demo: '$demoName' to '$MINIFI_HOME'"
 
 # Copy the configurations to MINIFI_HOME
 cp $PWD/Demos/$demoName/* $MINIFI_HOME/conf/.
 
-echo "$demoName deployed to: $MINIFI_HOME"
+echo "'$demoName' deployed to: '$MINIFI_HOME'"
+$MINIFI_HOME/bin/minifi.sh restart
