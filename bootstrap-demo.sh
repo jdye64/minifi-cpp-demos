@@ -40,3 +40,5 @@ echo "Deploying Demo: $demoName"
 
 # Copy the configurations to MINIFI_HOME
 cp $PWD/Demos/$demoName/* $MINIFI_HOME/conf/.
+
+echo "$demoName deployed to: $MINIFI_HOME"
